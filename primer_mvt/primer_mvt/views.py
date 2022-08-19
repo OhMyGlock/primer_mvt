@@ -2,7 +2,7 @@ from multiprocessing import context
 from django.http import HttpResponse
 from django.shortcuts import render
 
-def estudiante_de_coder(request):
+def estudiante(request):
     return render (request, 'template_estudiante.html', context={})
 
 def padre(request):

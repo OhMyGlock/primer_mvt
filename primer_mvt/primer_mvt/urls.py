@@ -15,11 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from primer_mvt.views import estudiante_de_coder, padre, madre, hermana, hermano
+from primer_mvt.views import estudiante, padre, madre, hermana, hermano
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('estudiante_de_coder/', estudiante_de_coder, name='estudiante_de_coder'),
+    path('estudiante/', estudiante, name='estudiante'),
     path('padre/', padre, name='padre'),
     path('madre/', madre, name='madre'),
     path('hermana/', hermana, name='hermana'),
