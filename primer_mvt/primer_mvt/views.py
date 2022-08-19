@@ -1,17 +1,18 @@
 from multiprocessing import context
 from django.http import HttpResponse
+from django.shortcuts import render
 
 def estudiante_de_coder(request):
-    return render (request, 'estudiante_de_coder.html', context={})
+    return render (request, 'template_estudiante.html', context={})
 
 def padre(request):
-    return render (request, 'padre.html', context={})
+    return render (request, 'template_padre.html', context={})
 
 def madre(request):
-    return render (request, 'madre.html', context={})
+    return render (request, 'template_madre.html', context={})
 
 def hermana(request):
-    return render (request, 'hermana.html', context={})
+    return render (request, 'template_hermana.html', context={})
 
 def hermano(request):
-    return render (request, 'hermano.html', context={})
+    return render (request, 'template_hermano.html', context={})
