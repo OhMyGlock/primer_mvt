@@ -5,30 +5,30 @@
 {% endblock %}
 
 <body>
-<center>
-    {% block header %}
-        <h1>Vito's Mum</h1>
-    {% endblock %}
+    <center>
+        {% block header %}
+            <h1>Vito's Mum</h1>
+        {% endblock %}
 
-    {% block dockbar %}
+        {% block dockbar %}
+            <h2>
+            <a href='/home'>Home</a>
+            <a href='/estudiante/'>Estudiante</a>
+            <a href='/padre/'>Padre</a>
+            <a href='/madre/'>Madre</a>
+            <a href='/hermana/'>Hermana</a>
+            <a href='/hermano/'>Hermano</a>
+            </h2>
+        {% endblock %}
+    </center>
+
+    {% block content %}
         <h2>
-        <a href='/home'>Home</a>
-        <a href='/estudiante/'>Estudiante</a>
-        <a href='/padre/'>Padre</a>
-        <a href='/madre/'>Madre</a>
-        <a href='/hermana/'>Hermana</a>
-        <a href='/hermano/'>Hermano</a>
+            Nombre: {{name}},
+            Apellido: {{last_name}},
+            Edad: {{age}},
+            Fecha de nacimiento: {{birth}},
+            Fecha de hoy: {{date}}
         </h2>
     {% endblock %}
-</center>
-
-{% block content %}
-    <h2>
-        Nombre: {{name}},
-        Apellido: {{last_name}},
-        Edad: {{age}},
-        Fecha de nacimiento: {{birth}},
-        Fecha de hoy: {{date}}
-    </h2>
-{% endblock %}
 </body>
