@@ -16,6 +16,7 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from primer_mvt.views import home, estudiante, padre, madre, hermana, hermano
+from familiares.views import new_fliar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -25,4 +26,5 @@ urlpatterns = [
     path('madre/', madre, name='madre'),
     path('hermana/', hermana, name='hermana'),
     path('hermano/', hermano, name='hermano'),
+    path('new_fliar/', new_fliar, name='new_fliar'),
 ]

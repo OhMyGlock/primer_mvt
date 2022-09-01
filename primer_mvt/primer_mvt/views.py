@@ -62,3 +62,9 @@ def hermano(request):
         'date':today
     }
     return render (request, 'hermano.html', context=context)
+
+    # def new_fliar(request):
+    #     context = {
+
+    #     }
+    #     return render (request, 'new_fliar',)
