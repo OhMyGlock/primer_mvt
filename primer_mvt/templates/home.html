@@ -1,3 +1,5 @@
+{% extends 'base.html' %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,30 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
         {% block title %}
-            Home MVT Coderhouse :)
-        {% endblock %}
+        Home del MVT
+        {% endblock title %}
     </title>
 </head>
 <body>
-    <center>
-        {% block header %}
-            <h1>Pagina principal del MVT, desde aquí podras ver algunos datos de familiares de Vito, alumno de Coderhouse.</h1>
-        {% endblock %}
+    {% block header %}
 
-        {% block dockbar %}
-            <h2>
-            <a href='/home'>Home</a>
-            <a href='/estudiante/'>Estudiante</a>
-            <a href='/padre/'>Padre</a>
-            <a href='/madre/'>Madre</a>
-            <a href='/hermana/'>Hermana</a>
-            <a href='/hermano/'>Hermano</a>
-            </h2>
-        {% endblock %}
-    </center>
+    {% endblock header %}
 
     {% block content %}
-        <h2>Aqui podras visualizar los datos</h2>
+        <h2>
+            <center>Aqui podras visualizar los datos de los familiares del alumno Vito de Coderhouse.</center>
+            <br>- Si ingresa mediante sus nombres en el dock superior, seran cargados desde el views.py del proyecto.
+            <br>- Si ingresa en la ultima opcion de familia, los visualizara desde la DB.
+        </h2>
     {% endblock %}
 
 </body>

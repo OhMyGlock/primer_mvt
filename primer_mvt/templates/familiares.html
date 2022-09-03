@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    inicio
+{% endblock title %}
+
+
+    {% block content %}
+        <h2>Aqui podras visualizar los datos</h2>
+
+        
+        {% for i in fami %}
+            <h2>{{i.name}} - {{i.last_name}}</h2>
+        {% endfor %}
+            
+    {% endblock %}
+    

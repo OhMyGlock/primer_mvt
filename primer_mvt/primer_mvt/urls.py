@@ -14,17 +14,18 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 from primer_mvt.views import home, estudiante, padre, madre, hermana, hermano
 from familiares.views import new_fliar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', home, name='home'),
+    path('', home, name='home'),
     path('estudiante/', estudiante, name='estudiante'),
     path('padre/', padre, name='padre'),
     path('madre/', madre, name='madre'),
     path('hermana/', hermana, name='hermana'),
     path('hermano/', hermano, name='hermano'),
     path('new_fliar/', new_fliar, name='new_fliar'),
+    path('familiares/', include('familiares.urls')),
 ]

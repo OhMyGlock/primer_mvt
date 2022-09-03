@@ -6,3 +6,6 @@ class Familiares(models.Model):
     age = models.IntegerField()
     birth = models.DateField()
     date = models.DateTimeField(auto_now_add=True)
+    
+    def __str__(self):
+        return self.name

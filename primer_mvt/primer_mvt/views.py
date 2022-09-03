@@ -1,12 +1,9 @@
-from multiprocessing import context
 from django.http import HttpResponse
 from django.shortcuts import render
 from datetime import date
 
 def home(request):
-    context = {
-    }
-    return render (request, 'home.html', context=context)
+    return render (request, 'home.html')
 
 def estudiante(request):
     today = date.today
@@ -62,9 +59,3 @@ def hermano(request):
         'date':today
     }
     return render (request, 'hermano.html', context=context)
-
-    # def new_fliar(request):
-    #     context = {
-
-    #     }
-    #     return render (request, 'new_fliar',)

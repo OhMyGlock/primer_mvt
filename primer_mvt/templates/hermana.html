@@ -1,34 +1,12 @@
-{% extends 'home.html' %}
+{% extends 'base.html' %}
 
-{% block title %}
-    Hermana
-{% endblock %}
-
-<body>
-    <center>
-        {% block header %}
-            <h1>Vito's Sis</h1>
-        {% endblock %}
-
-        {% block dockbar %}
-            <h2>
-            <a href='/home'>Home</a>
-            <a href='/estudiante/'>Estudiante</a>
-            <a href='/padre/'>Padre</a>
-            <a href='/madre/'>Madre</a>
-            <a href='/hermana/'>Hermana</a>
-            <a href='/hermano/'>Hermano</a>
-            </h2>
-        {% endblock %}
-    </center>
 
     {% block content %}
         <h2>
-            Nombre: {{name}},
-            Apellido: {{last_name}},
-            Edad: {{age}},
-            Fecha de nacimiento: {{birth}},
-            Fecha de hoy: {{date}}
+            <br>Nombre: {{name}}
+            <br>Apellido: {{last_name}}
+            <br>Edad: {{age}}
+            <br>Fecha de nacimiento: {{birth}}
+            <br>Fecha de hoy: {{date}}
         </h2>
     {% endblock %}
-</body>
