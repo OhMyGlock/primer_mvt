@@ -1,16 +1,16 @@
 {% extends 'base.html' %}
 
 {% block title %}
-    inicio
+    Datos desde la DB
 {% endblock title %}
 
 
     {% block content %}
-        <h2>Aqui podras visualizar los datos</h2>
+        <h2>Aqui podras visualizar los datos creados en la DB desde el admin panel</h2>
 
         
         {% for i in fami %}
-            <h2>{{i.name}} - {{i.last_name}}</h2>
+            <h2>- {{i.last_name}}, {{i.name}}: nacido el {{i.birth}}, de {{i.age}} años de edad, a fecha de hoy {{i.date.today}}</h2>
         {% endfor %}
             
     {% endblock %}

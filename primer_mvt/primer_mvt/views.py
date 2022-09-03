@@ -44,7 +44,7 @@ def hermana(request):
         'name':'Bianca Sofia',
         'last_name':'Masitti',
         'age':'26',
-        'birth':'07/04/996',
+        'birth':'07/04/1996',
         'date':today
     }
     return render (request, 'hermana.html', context=context)
