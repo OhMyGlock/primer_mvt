@@ -15,11 +15,6 @@
 
 <center><h2>
 <a href="{% url 'home' %}">Home</a>
-<a href="{% url 'estudiante' %}">Estudiante</a>
-<a href="{% url 'padre' %}">Padre</a>
-<a href="{% url 'madre' %}">Madre</a>
-<a href="{% url 'hermana' %}">Hermana</a>
-<a href="{% url 'hermano' %}">Hermano</a>
 <a href="{% url 'familires_app:familiares' %}">Familiares(DB)</a>
 </center></h2>
 
@@ -29,8 +24,6 @@
 
 <h2>
     <center>Aqui podras visualizar los datos de los familiares del alumno Vito de Coderhouse.</center>
-    <br>- Si ingresa mediante los enlaces en el dock superior, seran cargados desde el views.py del proyecto.
-    <br>- Si ingresa en la ultima opcion de Familiares(DB), los visualizara desde la DB.
 </h2>
 
 {% block content %}

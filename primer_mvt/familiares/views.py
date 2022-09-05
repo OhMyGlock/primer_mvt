@@ -12,5 +12,5 @@ def new_fliar(request):
 
 # llama todos los registros
 def traer_registros(request):
-    familiares=Familiares.objects.all()[:5]# llama 5 familiares
+    familiares=Familiares.objects.all()[:10]# llama 10 familiares
     return  render(request, 'familiares.html', {'fami':familiares})
